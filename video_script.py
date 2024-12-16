@@ -114,7 +114,7 @@ class VideoProcessor:
 
                     # New filename and output path
                     new_filename = self._sanitize_filename(file)
-                    output_path = os.path.join(self.target_dir, new_filename)
+                    output_path = os.path.join(self.target_dir, new_filename, ".mp4")
 
                     # If file size less than target, copy to dir, and continue to next iteration
                     # No modifications needed
